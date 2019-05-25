@@ -106,7 +106,7 @@ export default {
         columnHeader: "操作",
         edit: {
           icon: "el-icon-edit",
-          text: "编辑",
+          text: "编辑2",
           type: "primary",
           size: "small"
         },

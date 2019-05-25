@@ -16,7 +16,9 @@ import Members from './pages/Members';
 import Powers from './pages/Powers';
 import Categories from './pages/Categories';
 import Dashboard from './pages/Dashboard';
-import HeaderAside from './layouts/HeaderAside'; // 变量名 routerConfig 为 iceworks 检测关键字
+import HeaderAside from './layouts/HeaderAside'; 
+import Orders from './pages/Orders';
+// 变量名 routerConfig 为 iceworks 检测关键字
 // ice 会自动在这个变量下添加路由数据
 // 请不要修改名称
 // 备注 ice 自动添加的路由记录是以下格式
@@ -163,7 +165,15 @@ const routerConfig = [
       requiresAuth: true,
       title: '控制台',
     },
-  },
+  },{
+    path:'/Orders',
+    layout:HeaderAside,
+    component:Orders,
+    meta:{
+      requiresAuth:true,
+      title:'订单管理'
+    }
+  }
 ]; // 不参与菜单显示的
 // ice 不会处理这部分
 // 但是这部分路由也会被注册

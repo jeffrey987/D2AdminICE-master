@@ -62,6 +62,17 @@ const asideMenuConfig = [
         icon: 'list-alt',
       },
     ],
+  },{
+    name: '订单管理',
+    path: '/Orders',
+    icon: 'file-text-o',
+    children: [
+      {
+        name: '订单管理',
+        path: '/Orders/',
+        icon: 'file-text-o',
+      }
+    ]
   },
   {
     name: '模块管理',

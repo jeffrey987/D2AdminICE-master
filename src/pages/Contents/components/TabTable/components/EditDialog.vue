@@ -1,12 +1,12 @@
 <template> 
   <div :style="style.editDialog">
     <el-button @click="handleColumnClick(row)" type="primary" size="mini" round v-if="actkey === 'action'">编辑</el-button>
-    <el-dialog title="编辑" :visible.sync="dialogFormVisible">
+    <el-dialog title="编辑2" :visible.sync="dialogFormVisible">
       <el-form :model="formRow" :rules="rules" ref="ruleForm">
-        <el-form-item label="标题" :label-width="formLabelWidth" prop="title">
+        <el-form-item label="标题1" :label-width="formLabelWidth" prop="title">
           <el-input v-model="formRow.title"></el-input>
         </el-form-item>
-        <el-form-item label="副标题" :label-width="formLabelWidth" prop="subTitle">
+        <el-form-item label="副标题2" :label-width="formLabelWidth" prop="subTitle">
           <el-input v-model="formRow.subTitle"></el-input>
         </el-form-item>
         <el-form-item label="标签" :label-width="formLabelWidth" prop="tags">
