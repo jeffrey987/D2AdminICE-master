@@ -1,6 +1,6 @@
 import request from '@/plugin/axios'
 
-var OrdersGetAll = function(data) {
+var GetAll = function(data) {
     return request({
       url: '/swagger/api/Orders/GetListsAsync',
       method: 'get',
@@ -8,7 +8,7 @@ var OrdersGetAll = function(data) {
     })
   }
 
-  var OrdersGet = function(data) {
+  var ContentGet = function(data) {
     return request({
       url: '/swagger/api/orders/Get',
       method: 'get',
@@ -16,7 +16,7 @@ var OrdersGetAll = function(data) {
     })
   }
 
-  var OrdersDel = function(data) {
+  var Deleted = function(data) {
     return request({
       url: '/swagger/api/Article/Delete',
       method: 'delete',
@@ -24,7 +24,7 @@ var OrdersGetAll = function(data) {
     })
   }
 
-  var OrdersCreateOrUpdate = function(data) {
+  var CreateOrUpdate = function(data) {
     return request({
       url: '/swagger/api/Article/CreateOrUpdateAsync',
       method: 'post',
@@ -32,4 +32,4 @@ var OrdersGetAll = function(data) {
     })
   }
 
-  export{OrdersGetAll,OrdersGet,OrdersDel,OrdersCreateOrUpdate}
+  export{GetAll,ContentGet,Deleted,CreateOrUpdate}
