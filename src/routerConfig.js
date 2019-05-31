@@ -18,6 +18,9 @@ import Categories from './pages/Categories';
 import Dashboard from './pages/Dashboard';
 import HeaderAside from './layouts/HeaderAside'; 
 import Orders from './pages/Orders';
+import Products from './pages/Products';
+//import Activitys from './pages/Activitys';
+
 // 变量名 routerConfig 为 iceworks 检测关键字
 // ice 会自动在这个变量下添加路由数据
 // 请不要修改名称
@@ -172,6 +175,14 @@ const routerConfig = [
     meta:{
       requiresAuth:true,
       title:'订单管理'
+    }
+  },{
+    path:'/Products',
+    layout:HeaderAside,
+    component:Products,
+    meta:{
+      requiresAuth:true,
+      title:'产品管理'
     }
   }
 ]; // 不参与菜单显示的

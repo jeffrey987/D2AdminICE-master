@@ -63,6 +63,17 @@ const asideMenuConfig = [
       },
     ],
   },{
+    name: '产品管理',
+    path: '/Products',
+    icon: 'file-text-o',
+    children: [
+      {
+        name: '产品管理',
+        path: '/Products/',
+        icon: 'file-text-o',
+      }
+    ]
+  },{
     name: '订单管理',
     path: '/Orders',
     icon: 'file-text-o',
