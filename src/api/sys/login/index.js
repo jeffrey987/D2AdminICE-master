@@ -18,7 +18,7 @@ var GetUser = function(data) {
 
 var GetAllUser = function(data) {
   return request({
-    url: '/services/app/User/GetLists',
+    url: '/services/app/User/GetAll',
     method: 'get',
     params: data
   })
